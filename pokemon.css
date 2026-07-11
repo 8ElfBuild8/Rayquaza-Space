@@ -1,0 +1,205 @@
+
+body {
+  background-image: url("2ray.png");
+  background-repeat: no-repeat;   /* ❌ no se repite */
+  background-size: cover;         /* 🔥 llena toda la pantalla */
+  background-position: center;
+  margin: 50px;
+}
+
+
+
+
+
+
+.titulo ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: white;
+   border-color: white;
+   border-style: solid;
+   border-width: 3px;
+ box-shadow: 10px 10px 10px gray;
+}
+
+.titulo ul:hover {
+	box-shadow: 7px 7px 7px yellow;
+	border-radius: 20px;
+}
+
+
+
+
+.titulo li {
+  color: white;
+  cursor: pointer;
+  font-size: 60px;
+  padding-left: 10px;
+   transition: color 0.3s ease, border-bottom 2s ease, width 2s ease;
+    position: relative;
+	
+}
+
+.titulo li:hover {
+  color: green;
+
+}
+
+
+.titulo li:hover::after {
+  width: 100%;
+}
+
+.titulo li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+
+.titulo li a {
+  text-decoration: none;
+}
+
+.a1 {
+	   text-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+a:hover {
+  color: green;
+   transition: color 0.3s ease, border-bottom 2s ease, width 2s ease;
+   border-bottom: none;
+}
+
+.logo {
+  width: 80px;
+  display: block;
+  margin-left: auto;
+   border-radius: 20px;
+    border-color: white;
+   border-style: solid;
+   border-width: 2px;
+   
+   
+  }
+
+.icono1 {
+    
+   font-size: 60px;
+  cursor: pointer;
+  padding: 20;
+  margin: 0;
+  line-height: 1;
+   text-shadow: 5px 5px 5px gray;
+  
+}
+
+
+.intro {
+	width: 40%;
+}
+
+.start {
+	width: 40%;
+	height: auto;
+	font-size: 80;
+	color: white;
+	text-align: left;
+	
+   border-color: green;
+   border-style: solid;
+   border-width: 6px;
+   box-shadow: 10px 10px 10px gray;
+   border-radius: 20px;
+   
+   background-image: url("2poke.jpg");
+  background-repeat: no-repeat;   /* ❌ no se repite */
+  background-size: cover;         /* 🔥 llena toda la pantalla */
+  background-position: center;
+  margin: 50px;
+   
+}
+
+.start:hover {
+	box-shadow: 7px 7px 7px yellow;
+	border-radius: 20px;
+	
+}
+
+.a2 {
+	color: white;
+	
+    align-items: center;
+	text-align: left;
+	transition: color 0.3s ease, border-bottom 2s ease, width 2s ease;
+	 font-family: cursiva;
+	 text-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+.a2:hover {
+     color: red;
+	 transition: color 0.3s ease, border-bottom 2s ease, width 2s ease;
+	 font-family: cursiva;
+	 text-align: left;
+	 text-shadow: 0 0 5px white, 0 0 10px white;
+	 width: 100%
+}
+
+.a2 {
+  position: relative;
+  text-decoration: none; /* opcional */
+  
+}
+
+.a2::after {
+  content: "";
+  position: absolute;
+  left: 10px;        /* 👈 empieza desde la izquierda */
+  bottom: -3px;   /* 👈 un chin abajo del texto */
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.a2:hover::after {
+  width: 30%;    /* 👈 crece completo */
+}
+
+
+
+
+button {
+  animation: shake 2s infinite;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Animación de temblor */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Cuando pasas el mouse */
+button:hover {
+  animation: shake 0.4s;
+}

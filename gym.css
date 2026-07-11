@@ -1,0 +1,272 @@
+
+
+
+
+
+body {
+  background-color: lightblue;
+  margin: 50px;
+}
+
+.header {
+  height: 500px; /* altura del header */
+  background-image: url("4ray.png");
+  background-size: cover;      /* evita que se estire */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat;
+  
+  background-color: #04AA6D;
+  border: 3px solid white;
+  border-radius: 55px;
+  
+   width: 100%;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   box-shadow: 10px 10px 10px gray;
+}
+
+.header:hover {
+	box-shadow: 7px 7px 7px orange;
+	border-radius: 55px;
+	cursor: pointer;
+}
+
+nav {
+  background-color: #04AA6D;
+  border: 3px solid white;
+  border-radius: 55px;
+  
+   width: 100%;
+   margin-bottom: 20px;
+   margin-right: 20px;
+    box-shadow: 10px 10px 10px gray;
+   
+}
+
+.titulo {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+  margin: 0;
+ 
+}
+
+.titulo li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+}
+
+.titulo li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: green;
+  transition: width 0.3s ease;
+}
+
+.titulo li a:hover::after {
+  width: 100%;
+  
+}
+
+.a :hover {
+  color: yellow;
+}
+
+.titulo li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.a {
+	color: yellow;
+}
+
+.titulo li :hover {
+  color: green;
+}
+
+
+body {
+	margin: 20;
+	padding: 0;
+}
+
+/* NAV */
+.titulo {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 20px;
+	margin-right: 20 px;
+}
+
+.titulo:hover {
+	box-shadow: 7px 7px 7px orange;
+	border-radius: 55px;
+}
+
+
+/* BLOCK 1 */
+.bloque1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 80px;
+	padding-top: 5px;
+}
+
+/* IMAGE */
+.raichu img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.raichu:hover {
+	box-shadow: 10px 10px 10px orange;
+	border-radius: 55px;
+}
+
+/* TEXT */
+.p1 {
+	max-width: 300px;
+		align-items: center;
+	justify-content: center;
+	
+}
+
+/* BLOCK 2 */
+.bloque2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	padding: 20px;
+}
+
+/* SECOND IMAGE */
+.gary img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.gary:hover {
+	box-shadow: 10px 10px 10px orange;
+	border-radius: 55px;
+}
+
+img {
+	border-radius: 55px;
+	border-color: green;
+	border-width: 3px;
+	 border-style: solid;
+	 box-shadow: 10px 10px 10px gray;
+}
+
+.p {
+	font-size: 40px;
+}
+
+.cubo1 {
+	height:auto;
+	width: 33%;
+	background-color: white;
+	
+	border-radius: 55px;
+	border-color: green;
+	border-width: 3px;
+	 border-style: solid;
+	 box-shadow: 10px 10px 10px gray;
+	padding: 20px;
+	font-size: 40px;
+	font-family: cursive;
+	
+	justify-content: center;
+	align-items: flex-start;
+	
+}
+
+.music   {
+	
+	height:auto;
+	width: 33%;
+	background-color: yellow;
+	
+	border-radius: 55px;
+	border-color: green;
+	border-width: 3px;
+	 border-style: solid;
+	 box-shadow: 10px 10px 10px gray;
+	padding: 5px 20px 20px 20px;
+	font-size: 40px;
+	
+	font-family: cursive;
+	justify-content: center;
+	
+}
+
+.music p {
+	margin-top: 0;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	
+}
+
+.p1 p {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+.raichu p {
+    margin: 0;
+}
+
+.song {
+	border-color: green;
+}
+
+.paudio {
+	float: right;
+}
+
+
+
+
+
+.footer {
+  height: 450px; /* altura del header */
+  background-image: url("ray6.jpg");
+  background-size: cover;      /* evita que se estire */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat;
+  
+  
+  border: 6px solid white;
+  border-radius: 55px;
+  
+   
+   width: 100%;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   box-shadow: 10px 10px 10px 10px gray;
+   padding: 0;
+   
+   justify-content: center;
+   margin: 10px auto; 
+}
+
+.footer:hover {
+	box-shadow: 6px 6px 6px 6px orange;
+	border-radius: 55px;
+}
