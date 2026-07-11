@@ -90,7 +90,7 @@ nav {
 	display: flex;  
 	gap: 20px;
 	justify-content: center;
-	
+	margin: 20;
 	
 }
 
@@ -99,7 +99,7 @@ nav {
 }
 
 .videos1 iframe {
-  width: 100%;
+  width: 33%;
   max-width: 500px;
   height: 280px;
 }
