@@ -7,7 +7,7 @@ body {
   margin: 50px;
 }
 
-nav {
+nav ul{
 flex-wrap: wrap;
 }
 
