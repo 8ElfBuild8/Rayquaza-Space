@@ -1,7 +1,7 @@
 
 body {
 	 background-image: url("patrones3.png");
-  background-repeat: no-repeat;   /* ❌ no se repite */
+  background-repeat: repeat;   /* ❌ no se repite */
   background-size: cover;         /* 🔥 llena toda la pantalla */
   background-position: center;
   margin: 50px;
