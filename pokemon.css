@@ -7,23 +7,30 @@ body {
   margin: 50px;
 }
 
-nav ul{
-flex-wrap: wrap;
-}
-
 nav {
-margin-bottom: 200px;
+	width: 100%;
+	
+	
+	justify-content: center;
+	margin-right: 20 px;
+	margin-bottom: 200px;
+}
+nav ul {
+    
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 
-.titulo ul {
+ ul {
   display: flex;
   list-style: none;
   gap: 15px;
   background-color: #111;
   padding: 10px;
   border-radius: 20px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-color: white;
    border-color: white;
@@ -47,7 +54,8 @@ margin-bottom: 200px;
   padding-left: 10px;
    transition: color 0.3s ease, border-bottom 2s ease, width 2s ease;
     position: relative;
-	
+	display: flex;
+	position: relative;
 }
 
 .titulo li:hover {
@@ -73,11 +81,12 @@ margin-bottom: 200px;
 
 .titulo li a {
   text-decoration: none;
+  position: relative
+  display: flex;
 }
 
 .a1 {
 	   text-shadow: 0 0 5px white, 0 0 10px white;
-	
 }
 
 a:hover {
@@ -110,12 +119,9 @@ a:hover {
 }
 
 
-.intro {
-	width: 40%;
-}
 
 .start {
-	width: 40%;
+	width: 35%;
 	height: auto;
 	font-size: 80;
 	color: white;
@@ -178,7 +184,7 @@ a:hover {
 }
 
 .a2:hover::after {
-  width: 30%;    /* 👈 crece completo */
+  width: 25%;    /* 👈 crece completo */
 }
 
 
@@ -186,12 +192,18 @@ a:hover {
 
 button {
   animation: shake 2s infinite;
+ 
 }
 
 button {
+	 margin-top: 60px;
   padding: 15px 30px;
   font-size: 20px;
   cursor: pointer;
+   width: 45%;
+   height: auto;
+   
+   gap: 100px;
 }
 
 /* Animación de temblor */
@@ -206,5 +218,46 @@ button {
 
 /* Cuando pasas el mouse */
 button:hover {
-  animation: shake 0.4s;
+  animation: shake 2s infinite;
+}
+
+
+.bloque1 {
+	display: flex;
+	justify-content: center;
+	 gap: 90px;
+    align-items: center;	
+	
+}
+
+.intro {
+	 width: 35%;
+	 animation: shake 2s infinite;
+	 margin-top: 40px;
+	 border-radius: 20px;
+	 box-shadow: 7px 7px 7px gray;
+	
+}
+
+.intro:hover {
+    box-shadow: 7px 7px 7px yellow;
+	border-radius: 20px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
