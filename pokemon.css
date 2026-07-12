@@ -191,19 +191,18 @@ a:hover {
 
 
 button {
-  animation: shake 2s infinite;
+      animation: shake 2s infinite;
  
 }
 
 button {
 	 margin-top: 60px;
-  padding: 15px 30px;
-  font-size: 20px;
-  cursor: pointer;
-   width: 45%;
-   height: auto;
-   
-   gap: 100px;
+     padding: 15px 30px;
+     font-size: 20px;
+     cursor: pointer;
+     width: 45%;
+     height: auto;
+     gap: 100px;
 }
 
 /* Animación de temblor */
@@ -223,10 +222,10 @@ button:hover {
 
 
 .bloque1 {
-	display: flex;
-	justify-content: center;
+	 display: flex;
+	 justify-content: center;
 	 gap: 90px;
-    align-items: center;	
+     align-items: center;	
 	
 }
 
@@ -236,6 +235,7 @@ button:hover {
 	 margin-top: 40px;
 	 border-radius: 20px;
 	 box-shadow: 7px 7px 7px gray;
+	 
 	
 }
 
