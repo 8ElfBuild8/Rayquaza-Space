@@ -231,7 +231,7 @@ button:hover {
 
 .intro {
 	 width: 35%;
-	 animation: shake 2s infinite;
+	 
 	 margin-top: 40px;
 	 border-radius: 20px;
 	 box-shadow: 7px 7px 7px gray;
