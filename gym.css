@@ -31,6 +31,15 @@ body {
 	cursor: pointer;
 }
 
+header {
+	transition : transform 0.2s
+	ease;
+}
+
+header:active {
+	transform: scale(0.9);
+	}
+
 nav {
   background-color: #04AA6D;
   border: 3px solid white;
