@@ -1,8 +1,4 @@
-<head>
-<link rel="stylesheet" href="gym.css">
-	
-</head>
-
+<!DOCTYPE html>
 <title>Gym</title>
 
 <div a href="index.html">
@@ -37,17 +33,26 @@
                       </div>
                   </div>
                                          
-					 <div class="music">
-                      <div class="p1">
-                                         <p >
-                                            Music Player.
-											<audio controls class="song"><source src="champion.mp3"></source></audio>	
-											
-											    <p class="paudio">
-												Champion
-												</p>
+					
+					
+					<div class="music">
+                         <div class="p1">
+				             <div class="ipod">		 
+					             <img id="song-image" src="ray7.2.png">
+					             <p class="paudio"> Music Player, song :		</p>		 
+					             <span id="song-name">Song </span>	<br>
+					             <input id="slider-song" type="range" class="slider-song"> <br>
+                                         
+										        
 												
-                                         </p>
+											<div id="music-buttons">
+												 <button class="icon-btn"><i id="playpause-song" class="fa-solid fa-circle-play"></i>  </button>
+											 <button class="icon-btn">	<i id="prev-song" class="fa-solid fa-backward-step"></i>    </button>
+											 <button class="icon-btn">	<i id="next-song" class="fa-solid fa-forward-step"></i>    </button>
+											 <button class="icon-btn">	<i id="repeat-song" class="fa-solid fa-repeat"></i>        </button>
+										     <button class="icon-btn">		<i id="pause-song" class="fa-solid fa-pause"></i>      </button>
+	      										</div>
+                             </div>          
                       </div>
                   </div>
 
@@ -74,5 +79,8 @@
        </footer>
 </div>
 
- 
- 
+ <link rel="stylesheet" href="gym.css">
+  <script src="musicplayer.js"></script>
+  
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
