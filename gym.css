@@ -75,23 +75,24 @@ nav {
   
 }
 
-.a :hover {
+a:hover {
   color: yellow;
+   
 }
 
 .titulo li a {
   color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
 
-.a {
+  }
+
+
+
+a {
 	color: yellow;
 }
 
-.titulo li :hover {
-  color: green;
-}
+
 
 
 body {
@@ -121,6 +122,7 @@ body {
 	justify-content: center;
 	gap: 80px;
 	padding-top: 5px;
+	padding: 5px;
 }
 
 /* IMAGE */
@@ -137,9 +139,10 @@ body {
 
 /* TEXT */
 .p1 {
-	max-width: 300px;
+	    
 		align-items: center;
-	justify-content: center;
+	    justify-content: center;
+		
 	
 }
 
@@ -195,32 +198,33 @@ img {
 	
 }
 
-.music   {
-	
-	height:auto;
-	width: 33%;
-	background-color: yellow;
-	
-	border-radius: 55px;
-	border-color: green;
-	border-width: 3px;
-	 border-style: solid;
-	 box-shadow: 10px 10px 10px gray;
-	padding: 5px 20px 20px 20px;
-	font-size: 40px;
-	
-	font-family: cursive;
-	justify-content: center;
-	
+.music {
+  height: auto;
+  width: 100%;
+  max-width: 600px; /* 🔥 controla el tamaño */
+  margin: 40px auto; /* más aire arriba/abajo */
+  background-color: yellow;
+
+  border-radius: 55px;
+  border: 3px solid green;
+  box-shadow: 10px 10px 10px gray;
+
+  
+  font-size: 40px;
+  font-family: cursive;
+  white-space:nowrap;
+ 
 }
 
 .music p {
-	margin-top: 0;
-	text-align: center;
-	width: 100%;
-	justify-content: center;
-	
+  margin: 20px 0;
+  text-align: center;
 }
+
+.music i {
+  font-size: 18px; /* prueba entre 20px - 30px */
+}
+
 
 .p1 p {
 	align-items: center;
@@ -236,9 +240,7 @@ img {
 	border-color: green;
 }
 
-.paudio {
-	float: right;
-}
+
 
 
 
@@ -270,3 +272,106 @@ img {
 	box-shadow: 6px 6px 6px 6px orange;
 	border-radius: 55px;
 }
+
+#song-image {
+  display: block;
+  margin: 40px auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 55px;
+}
+
+
+.music {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 3px;
+}
+
+#song-name {
+  margin-top: 20px;
+  font-size: clamp(20px, 6vw, 80px);
+  text-align: center;
+}
+
+#music-buttons {
+	
+	
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+
+
+#music-buttons {
+	
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+/* Botón invisible */
+.icon-btn {
+	background: none;
+	border: none;
+	padding-top: 20px;
+	cursor: pointer;
+}
+
+/* Iconos */
+.icon-btn i {
+	font-size: 60px;
+	color: forestgreen;
+
+	/* sombra individual */
+	filter: drop-shadow(4px 4px 5px gray);
+
+	transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover */
+.icon-btn:hover i {
+	transform: scale(1.2);
+	filter: drop-shadow(4px 4px 5px orange);
+}
+
+.icon-btn:active i {
+	transform: scale(0.9);
+}
+
+
+
+#slider-song {
+   
+   color: red;	
+   width: 300px;
+   height: 5px;
+   cursor: pointer;
+}
+
+.slider-song {
+	color:red;
+	width: 300px;
+	height: 5px;
+}
+
+.music-player-controls {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.ipod {
+        align-items: center;
+	    justify-content: center;
+		flex: wrap;
+	    margin: 3px;
+}	
